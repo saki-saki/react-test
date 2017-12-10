@@ -1,0 +1,21 @@
+# OSX
+#
+.DS_Store
+
+#
+.idea
+*.iml
+.gradle
+local.properties
+
+# node.js
+#
+node_modules/
+
+#vscode
+
+.vscode
+
+
+
+

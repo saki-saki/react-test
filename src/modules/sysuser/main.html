@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/target/require.js"></script>
+    <link rel="stylesheet" type="text/css" href="/node_modules/antd/dist/antd.css">
+    <script>
+        requirejs.config({
+            //By default load any module IDs from js/lib
+            baseUrl: '/target',
+            //except, if the module ID starts with "app",
+            //load it from the js/app directory. paths
+            //config is relative to the baseUrl, and
+            //never includes a ".js" extension since
+            //the paths config could be for a directory.
+            paths: {
+                app: '../app'
+            }
+        });
+
+      
+
+    </script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+          // Start the main app logic.
+        requirejs(['modules/sysuser/main'],
+            function (main) {
+
+            });
+    </script>
+</body>
+
+</html>
